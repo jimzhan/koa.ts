@@ -1,0 +1,13 @@
+{
+  "name": "koa.ts",
+  "version": "0.1.0",
+  "description": "Production application boilerplate for Koa in TypeScript",
+  "main": "src/index.ts",
+  "repository": "https://github.com/jimzhan/koa.ts",
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "typings": "^2.1.1"
+  }
+}
