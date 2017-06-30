@@ -1,16 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ES6",
     "module": "commonjs",
-    "noEmitOnError": true,
+    "target": "es6",
     "noImplicitAny": true,
-    "experimentalDecorators": true,
     "sourceMap": true,
-    "sourceRoot": "src",
-    "outDir": "dist"
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleResolution": "node"
   },
+  "compileOnSave": false,
+  "filesGlob": [
+    "./src/**/*.ts"
+  ],
   "exclude": [
     "dist",
     "node_modules"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./src/index.ts"
   ]
 }

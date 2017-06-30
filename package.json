@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "description": "Production application boilerplate for Koa in TypeScript",
   "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
   "repository": "https://github.com/jimzhan/koa.ts",
   "author": "Jim Zhan <jim.zhan@me.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "@types/koa": "^2.0.39",
     "koa": "^2.2.0",
+    "ts-node": "^3.1.0",
     "typings": "^2.1.1"
   }
 }

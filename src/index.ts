@@ -1,11 +1,10 @@
-import Koa from 'koa';
+import * as Koa from 'koa';
 
-let app = new Koa();
+const app = new Koa();
 
 app.use(async (ctx) => {
    let start = new Date;
    let ms = Number(new Date) - Number(start);
-
    ctx.body = ms;
 });
 
@@ -14,3 +13,6 @@ app.use(function () {
 });
 
 app.listen(3000);
+
+export default app;
+
