@@ -1,18 +1,12 @@
-import * as Koa from 'koa';
+import * as Koa from 'koa'
+import * as config from './config'
 
-const app = new Koa();
+const app = new Koa()
 
 app.use(async (ctx) => {
-   let start = new Date;
-   let ms = Number(new Date) - Number(start);
-   ctx.body = ms;
-});
+  ctx.body = config.prefix
+})
 
-app.use(function () {
-    this.body = 'Hello World';
-});
+app.listen(3000)
 
-app.listen(3000);
-
-export default app;
-
+export default app
